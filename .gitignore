@@ -1,0 +1,14 @@
+python/ipython/README
+python/ipython/profile_
+python/ipython/profile_default/db
+python/ipython/profile_default/history.sqlite
+python/ipython/profile_default/security
+python/ipython/profile_sh
+python/ipython/profile_default/startup/README
+uzbl/style.css
+
+# machine-specific links
+awesome/rc.lua
+awesome/conkyrc
+system/xinitrc
+system/xbindkeysrc

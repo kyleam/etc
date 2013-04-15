@@ -1,0 +1,32 @@
+#!/bin/sh
+
+xrdb "$HOME/.Xresources"
+
+# set up xmodmap; doesn't seem to be loading automatically
+xmodmap ~/.xmodmaprc
+
+# stop annoying beep
+# some reason couldn't get blacklisting working in /etc/modprobe.d
+# added this command in sudoers so don't need password
+sudo modprobe -r pcspkr
+
+# start conky with a delay
+/usr/bin/conky -q &
+
+# start emacs server
+emacs --daemon &
+
+# set background
+sh ~/.fehbg &
+
+# dual monitor
+xrandr --output DVI-0 --mode 1280x1024 --right-of DVI-1
+
+# start first dropbox
+dropboxd &>/dev/null &
+# start up second dropbox
+HOME=$HOME/.dropbox-alt
+dropboxd &>/dev/null &
+HOME=/home/$USER
+
+exec awesome

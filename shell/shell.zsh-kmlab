@@ -1,0 +1,4 @@
+# desktop specific setting
+ZSH_THEME="mytheme-blue"
+
+alias ack='ack-grep'

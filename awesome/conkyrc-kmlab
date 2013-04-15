@@ -1,0 +1,102 @@
+## use conky as bottom bar with awesome window manager
+
+alignment bottom_left
+background yes
+border_width 1
+cpu_avg_samples 2
+# avoids flicker
+double_buffer yes
+default_color Grey15
+default_outline_color white
+draw_borders no
+draw_graph_borders yes
+draw_outline no
+draw_shades no
+use_xft yes
+xftfont Droid Sans Mono:size=8
+gap_x 5
+gap_y 0
+minimum_size 1260 6
+maximum_width 1260
+net_avg_samples 2
+no_buffers yes
+out_to_console no
+out_to_stderr no
+extra_newline no
+own_window no
+own_window_class Conky
+own_window_type desktop
+own_window_transparent no
+stippled_borders 0
+update_interval 1.0
+uppercase no
+use_spacer left
+show_graph_scale no
+show_graph_range no
+format_human_readable yes
+
+TEXT
+## email
+gm \
+${if_match ${new_mails $HOME/mail/gmail/INBOX/} > 0}\
+${color #0000FF}\
+${new_mails $HOME/mail/gmail/INBOX/}\
+${color}\
+${else}\
+${new_mails $HOME/mail/gmail/INBOX/}\
+${endif}\
+ ym \
+${if_match ${new_mails $HOME/mail/yale/INBOX/} > 0}\
+${new_mails $HOME/mail/yale/INBOX/} \
+${else}\
+${new_mails $HOME/mail/yale/INBOX/} \
+${endif}\
+${color Gray35} :: ${color} \
+## uptime
+${uptime_short} ${color Gray35} :: ${color} \
+## temp
+temp \
+${if_match ${hwmon temp 1} > 45}\
+${color #8B0000}\
+${hwmon temp 1}\
+${color}\
+${else}\
+${hwmon temp 1}\
+${endif}\
+${if_match ${hwmon temp 2} > 45}\
+${color #8B0000}\
+${hwmon temp 2}\
+${color}\
+${else}\
+${hwmon temp 2}\
+${endif}\
+${color Gray35} :: ${color} \
+## network
+net \
+${addr eth0} \
+${upspeedf eth0} \
+${downspeedf eth0} ${color Gray35} :: ${color} \
+## ram
+ram \
+${if_match ${memperc} > 50}\
+${color #8B0000}\
+${memperc}%\
+${color}\
+${else}\
+${memperc}%\
+${endif}\
+${color Gray35} :: ${color} \
+## cpu
+cpu \
+${if_match ${cpu} > 50}\
+${color #8B0000}\
+${cpu}%\
+${color}\
+${else}\
+${cpu}%\
+${endif}\
+${color Gray35} :: ${color} \
+## hd
+hd ${fs_used /}/${fs_size /} \
+${color Gray35} :: ${color} \
+dd ${fs_used /data-drive}/${fs_size /data-drive} \

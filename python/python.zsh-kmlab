@@ -1,0 +1,5 @@
+if [ $(whoami) != "root" ]; then
+    export WORKON_HOME=$HOME/.pyenv
+    ## debian
+    source /etc/bash_completion.d/virtualenvwrapper
+fi

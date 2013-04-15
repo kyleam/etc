@@ -1,0 +1,17 @@
+# screenrc
+# 2012/05/04
+
+autodetach on
+startup_message off
+defscrollback 10000
+vbell on
+
+## disable troublesome keys
+# use exit to terminate windows instead
+bind k
+bind ^k
+bind .
+bind ^\
+bind \\
+
+hardstatus alwayslastline "%{rw}%H%{wk}|%?%-Lw%?%{wb}%n*%f %t%?(%u)%?%{wk}%?%+Lw%?"

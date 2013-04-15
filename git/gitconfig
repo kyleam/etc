@@ -1,0 +1,52 @@
+[user]
+        name = Kyle Meyer
+        email = meyerkya@gmail.com
+
+[commit]
+
+[core]
+        editor = vim +1
+        autocrlf = input
+        whitespace = trailing-space,space-before-tab
+        excludesfile = ~/.global-gitignore
+
+[alias]
+        # not making use of these
+        # see git.zsh for aliases
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+        lga = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+        lgp = log -p --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+        st = status
+        co = checkout
+        cb = checkout -b
+        df = diff
+        br = branch
+        ba = branch -a
+        brm = branch -m
+        unstage = reset HEAD --
+        last = log -1 HEAD
+        ci = commit
+        cim = commit -m
+        cia = commit -a
+        ciam = commit -am
+        re = rebase
+        ri = rebase -i
+[color]
+        ui = auto
+[diff]
+        tool = vimdiff
+        renames = copies
+        mnemonicprefix = true
+[difftool]
+        prompt = false
+
+[merge]
+        tool = vimdiff
+        stat = true
+[advice]
+        statusHints = false
+        pushNonFastForward = false
+[branch]
+        autosetupmerge = true
+[push]
+        default = tracking

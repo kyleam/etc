@@ -1,0 +1,16 @@
+# https://wiki.archlinux.org/index.php/Touchpad_Synaptics#Software_Toggle
+"~/bin/toggle-trackpad.sh"
+     m:0x5 + c:65
+     Control+Shift + space
+
+"~/bin/sleep-screen.sh"
+    m:0x0 + c:156
+    XF86Launch1
+
+"amixer set Master playback 2-"
+    m:0x0 + c:122
+    XF86AudioLowerVolume
+
+"amixer set Master playback 2+"
+    m:0x0 + c:123
+    XF86AudioRaiseVolume
