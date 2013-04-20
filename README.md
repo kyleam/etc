@@ -41,8 +41,9 @@ What's missing?
 
 I've managed to wrangle most of my relevant configuration files into
 this directory (or the corresponding private one). The main exception?
-My emacs.d files refuse to be housed with mere config files. Snotty, yes
-... but they've got a point, so what can I do?
+My [emacs.d files](https://github.com/kyleam/emacs.d) refuse to be
+housed with mere config files. Snotty, yes ... but they've got a point,
+so what can I do?
 
 
 Comments, issues, or improvements?
