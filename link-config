@@ -46,6 +46,8 @@ pwd_link system/xbindkeysrc ~/.xbindkeysrc
 
 pwd_link uzbl ~/.config/uzbl
 
+pwd_link zathura ~/.config/zathura
+
 pwd_link shell/screenrc ~/.screenrc
 
 pwd_link r/Renviron ~/.Renviron

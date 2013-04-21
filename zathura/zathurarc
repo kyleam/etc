@@ -1,0 +1,8 @@
+set default-bg "#D0D0D0"
+set statusbar-bg "#D0D0D0"
+set statusbar-fg "#333333"
+set inputbar-bg "#FFFFFF"
+set inputbar-fg "blue"
+
+" now set with xdg-open
+"set browser "chromium %s"
