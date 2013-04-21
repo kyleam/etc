@@ -12,5 +12,3 @@ alias tg="ping -c2 www.google.com"
 alias fu='fusermount -u'
 
 alias dup='urxvt &'
-
-alias wm='startx'

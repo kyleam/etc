@@ -10,5 +10,5 @@ uzbl/style.css
 # machine-specific links
 awesome/rc.lua
 awesome/conkyrc
-system/xinitrc
-system/xbindkeysrc
+xorg/xinitrc
+xorg/xbindkeysrc

@@ -36,13 +36,12 @@ pwd_link awesome/conkyrc ~/.conkyrc
 pwd_link python/matplotlibrc ~/.matplotlib/
 pwd_link python/ipython ~/.config/
 
-host_link system/xinitrc
-pwd_link system/xinitrc ~/.xinitrc
-pwd_link system/xmodmaprc ~/.xmodmaprc
-pwd_link system/Xresources ~/.Xresources
-
-host_link system/xbindkeysrc
-pwd_link system/xbindkeysrc ~/.xbindkeysrc
+host_link xorg/xinitrc
+pwd_link xorg/xinitrc ~/.xinitrc
+host_link xorg/xbindkeysrc
+pwd_link xorg/xbindkeysrc ~/.xbindkeysrc
+pwd_link xorg/xmodmaprc ~/.xmodmaprc
+pwd_link xorg/Xresources ~/.Xresources
 
 pwd_link uzbl ~/.config/uzbl
 
