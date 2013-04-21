@@ -42,6 +42,7 @@ host_link xorg/xbindkeysrc
 pwd_link xorg/xbindkeysrc ~/.xbindkeysrc
 pwd_link xorg/xmodmaprc ~/.xmodmaprc
 pwd_link xorg/Xresources ~/.Xresources
+pwd_link xorg/mimeapps.list ~/.local/share/applications/mimeapps.list
 
 pwd_link uzbl ~/.config/uzbl
 
