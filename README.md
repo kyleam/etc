@@ -12,7 +12,7 @@ used to get files in the right location.
 Setting it up
 -------------
 
-To get this up and running, a few things need to be happen:
+To get this up and running, a few things need to happen:
 
 1. set `ETC` in `zsh/zshrc` to the location of this repo. Any `*.zsh`
    files in subdirectories (one-level deep) will be sourced by `zshrc`
