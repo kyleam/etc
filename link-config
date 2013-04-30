@@ -34,7 +34,7 @@ pwd_link awesome ~/.config/awesome
 pwd_link awesome/conkyrc ~/.conkyrc
 
 pwd_link python/matplotlib ~/.matplotlib
-pwd_link python/ipython ~/.config/
+pwd_link python/ipython ~/.config/ipython
 
 host_link xorg/xinitrc
 pwd_link xorg/xinitrc ~/.xinitrc
