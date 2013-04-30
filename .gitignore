@@ -5,6 +5,11 @@ python/ipython/profile_default/history.sqlite
 python/ipython/profile_default/security
 python/ipython/profile_sh
 python/ipython/profile_default/startup/README
+
+python/matplotlib/fontList.cache
+python/matplotlib/fontList.py3k.cache
+python/matplotlib/tex.cache
+
 uzbl/style.css
 
 # machine-specific links
