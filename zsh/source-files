@@ -8,7 +8,9 @@ function source_config_files(){
 }
 
 source_config_files $ETC/*/*.zsh
-source_config_files $PETC/*/*.zsh
-# machine-specific files
-source_config_files $ETC/*/*.zsh-$(hostname)
-source_config_files $PETC/*/*.zsh-$(hostname)
+source_config_files $ETC/*/*.zsh-$(hostname) 2> /dev/null
+
+if [[ -d "$PETC" ]]; then
+    source_config_files $PETC/*/*.zsh
+    source_config_files $PETC/*/*.zsh-$(hostname) 2> /dev/null
+fi
