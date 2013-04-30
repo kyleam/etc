@@ -1,5 +1,5 @@
 if [ $(whoami) != "root" ]; then
     export WORKON_HOME=$HOME/.pyenv
     # arch linux
-    source $(which virtualenvwrapper.sh)
+    source $(which virtualenvwrapper.sh) > /dev/null
 fi
