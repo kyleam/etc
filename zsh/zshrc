@@ -12,11 +12,15 @@ fi
 ETC=$XDG_CONFIG_HOME/etc
 PETC=$XDG_CONFIG_HOME/petc  # private config
 ZSH=$ETC/zsh
-ZSH_THEME="mytheme-red"  # overridden by computer-specific setup
+ZSH_LIB=$ZSH/lib
 
 autoload -U compinit
 compinit -i
 
-source $ZSH/source-files
+ZSH_THEME="mytheme-red"  # overridden by computer-specific setup
+
+for config_file in $ZSH_LIB/*; do
+    source $config_file
+done
 
 source $ZSH/themes/$ZSH_THEME.zsh-theme

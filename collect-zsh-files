@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+## create links in one place for zsh sourcing
+
+## just want location variables
+source zsh/zshrc 2> /dev/null
+
+mkdir -p $ZSH_LIB
+echo Linking zsh files to $ZSH_LIB
+
+find $ETC -name "*.zsh" | grep -v $ZSH_LIB \
+    | xargs -i ln -sf {} $ZSH_LIB/
+find $ETC -name "*.zsh-$(hostname)" | grep -v $ZSH_LIB \
+    | xargs -i ln -sf {} $ZSH_LIB/
+if [[ -d $PETC ]]; then
+    find $PETC -name "*.zsh" | grep -v $ZSH_LIB \
+        | xargs -i ln -sf {} $ZSH_LIB/
+    find $PETC -name "*.zsh-$(hostname)" | grep -v $ZSH_LIB \
+        | xargs -i ln -sf {} $ZSH_LIB/
+fi
