@@ -127,3 +127,4 @@ function gcpr(){
     # 2 - branch to cherry pick from and rebase
     git checkout $1 && git cherry-pick $2 && git rebase -i $1 $2
 }
+compdef _git gcpr=git-branch
