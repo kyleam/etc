@@ -14,6 +14,9 @@ PETC=$XDG_CONFIG_HOME/petc  # private config
 ZSH=$ETC/zsh
 ZSH_LIB=$ZSH/lib
 
+if [[ -d "$HOME/share/zsh" ]]; then
+    fpath=( $fpath $HOME/share/zsh/$ZSH_VERSION/functions )
+fi
 autoload -U compinit
 compinit -i
 
