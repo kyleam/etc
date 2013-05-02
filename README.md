@@ -12,21 +12,32 @@ used to get files in the right location.
 Setting it up
 -------------
 
-To get this up and running, a few things need to happen:
+To get this up and running, `ETC` and `PETC` need to be set in
+`zsh/zshrc` (or, even better, use the default locations). Set these same
+locations in `fabfile.py`.
 
-1. set `ETC` in `zsh/zshrc` to the location of this repo. Any `*.zsh`
-   files in subdirectories (one-level deep) will be sourced by `zshrc`
-2. set `PETC` in `zsh/zshrc` to the location of any custom/private
-   configuration files. `*.zsh` files contained within `PETC`
-   subdirectories (one-level deep) will automatically be sourced.
-3. run `link-config` to make symbolic links (if `PETC` contains files
-   other than `*.zsh` files to be sourced, then something similar to
-   `link-config` is needed to get them in the right place)
-4. If you have settings that are specific for one machine, you can
-   manage them by appending `-<hostname>` to the end of the file. If it
-   is a `zsh` file (so `zsh-<hostname>`) it will be loaded by zsh when
-   you're on the machine with that hostname. The `host_link` function in
-   `link-config` is used to deal with non-zsh files.
+After this, run:
+
+    fab setup_local
+
+A few details
+-------------
+
+- `link-config` is the file that creates symbolic links between the
+  configuration files and their destinations (usually either `$HOME` or
+  `$XDG_CONFIG_HOME`). To add or remove files, this file should be
+  edited. Both `ETC` and `PETC` have a `link-config` file.
+- Files in `$ETC` and `$PETC` matching `*.zsh` will be added to
+  `$ZSH_LIB`, which will be sourced by zsh. `$ZSH_LIB` is created by
+  `collect-zsh-files`
+- Machine-specific files are managed by appending `-<hostname>` to the
+  end of the file. If it is a `zsh` file (so `*.zsh-<hostname>`), it
+  will be linked to `$ZSH_LIB` when you're on the machine with that
+  hostname. The `host_link` function in `link-config` is used to deal
+  with non-zsh files.
+- `fab setup_local` calls `collect-zsh-files` and `link-config` in both
+  `$ETC` and `$PETC` directories. Using fabric makes it easy to transfer
+  (a subset) of this config files to servers.
 
 Thanks oh-my-zsh
 ----------------
