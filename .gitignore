@@ -19,3 +19,5 @@ awesome/rc.lua
 awesome/conkyrc
 xorg/xinitrc
 xorg/xbindkeysrc
+
+*.pyc
