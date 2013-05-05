@@ -41,7 +41,7 @@ A few details
   with non-zsh files.
 - `fab setup_local` calls `collect-zsh-files` and `link-config` in both
   `$ETC` and `$PETC` directories. Using fabric makes it easy to transfer
-  (a subset) of this config files to servers.
+  (a subset) of these config files to servers.
 
 Thanks oh-my-zsh
 ----------------
