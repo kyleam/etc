@@ -12,9 +12,13 @@ used to get files in the right location.
 Setting it up
 -------------
 
-To get this up and running, `ETC` and `PETC` need to be set in
-`zsh/zshrc` (or, even better, use the default locations). Set these same
-locations in `fabfile.py`.
+Two locations need to be set in `zsh/zshrc` and `fabfile.py`.
+
+1. `ETC`, the main configuration directory (this repo). This is not
+   `/etc`.
+2. `PETC`, a private configuration directory
+
+I keep both of these in `$HOME/.config`.
 
 After this, run:
 
