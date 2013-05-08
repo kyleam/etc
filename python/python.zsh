@@ -10,3 +10,4 @@ if [[ $PYTHONPATH != $HOME/lib/python:* ]]; then
 fi
 
 alias ns='nosetests3'
+alias ns2='nosetests'
