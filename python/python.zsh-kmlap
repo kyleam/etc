@@ -3,3 +3,8 @@ if [ $(whoami) != "root" ]; then
     # arch linux
     source $(which virtualenvwrapper.sh) > /dev/null
 fi
+
+alias ipy='ipython'
+
+alias ns2='nosetests2'
+alias ns='nosetests'

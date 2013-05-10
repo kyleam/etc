@@ -3,3 +3,8 @@ if [ $(whoami) != "root" ]; then
     ## debian
     source /etc/bash_completion.d/virtualenvwrapper
 fi
+
+alias ipy='ipython3'
+
+alias ns2='nosetests'
+alias ns='nosetests3'
