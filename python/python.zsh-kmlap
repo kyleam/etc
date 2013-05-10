@@ -6,5 +6,8 @@ fi
 
 alias ipy='ipython'
 
+alias pt2='py.test2'
+alias pt='py.test'
+
 alias ns2='nosetests2'
 alias ns='nosetests'
