@@ -23,10 +23,10 @@ sh ~/.fehbg &
 xrandr --output DVI-0 --mode 1280x1024 --right-of DVI-1
 
 # start first dropbox
-dropboxd &>/dev/null &
+dropbox start &>/dev/null &
 # start up second dropbox
 HOME=$HOME/.dropbox-alt
-dropboxd &>/dev/null &
+dropbox start &>/dev/null &
 HOME=/home/$USER
 
 exec awesome
