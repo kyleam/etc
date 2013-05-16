@@ -1,4 +1,5 @@
 zsh/lib
+zsh/cache
 
 python/ipython/README
 python/ipython/profile_
