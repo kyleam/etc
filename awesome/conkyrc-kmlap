@@ -36,22 +36,6 @@ show_graph_range no
 format_human_readable yes
 
 TEXT
-## email
-gm \
-${if_match ${new_mails $HOME/mail/gmail/INBOX/} > 0}\
-${color #0000FF}\
-${new_mails $HOME/mail/gmail/INBOX/}\
-${color}\
-${else}\
-${new_mails $HOME/mail/gmail/INBOX/}\
-${endif}\
- ym \
-${if_match ${new_mails $HOME/mail/yale/INBOX/} > 0}\
-${new_mails $HOME/mail/yale/INBOX/} \
-${else}\
-${new_mails $HOME/mail/yale/INBOX/} \
-${endif}\
-${color Gray35} :: ${color} \
 ## uptime
 ${uptime_short} ${color Gray35} :: ${color} \
 ## temp
