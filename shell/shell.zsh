@@ -6,8 +6,6 @@ alias rss='rsync --progress -avzue ssh'
 alias h='head -1'
 alias t='tail -1'
 
-alias c='clear'
-
 alias mylast='(echo "## $(date)" && fc -l -1 | cut -d " " -f3-)'
 alias ch='mylast >> command-history'
 
