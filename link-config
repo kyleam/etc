@@ -26,6 +26,7 @@ pwd_link zsh/zshrc ~/.zshrc
 pwd_link vim/vimrc ~/.vimrc
 
 pwd_link git/gitconfig ~/.gitconfig
+pwd_link git/global-gitignore ~/.global-gitignore
 pwd_link git/git-completion.bash ~/.git-completion.bash
 
 host_link awesome/rc.lua
