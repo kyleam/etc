@@ -10,13 +10,10 @@ xmodmap ~/.xmodmaprc
 # added this command in sudoers so don't need password
 sudo modprobe -r pcspkr
 
-# start conky with a delay
 /usr/bin/conky -q &
 
-# start emacs server
 emacs --daemon &
 
-# set background
 sh ~/.fehbg &
 
 # dual monitor
