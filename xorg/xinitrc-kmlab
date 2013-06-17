@@ -19,11 +19,4 @@ sh ~/.fehbg &
 # dual monitor
 xrandr --output DVI-0 --mode 1280x1024 --right-of DVI-1
 
-# start first dropbox
-dropbox start &>/dev/null &
-# start up second dropbox
-HOME=$HOME/.dropbox-alt
-dropbox start &>/dev/null &
-HOME=/home/$USER
-
 exec awesome
