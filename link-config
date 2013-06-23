@@ -41,6 +41,7 @@ host_link xorg/xinitrc
 pwd_link xorg/xinitrc ~/.xinitrc
 host_link xorg/xbindkeysrc
 pwd_link xorg/xbindkeysrc ~/.xbindkeysrc
+host_link xorg/xmodmaprc
 pwd_link xorg/xmodmaprc ~/.xmodmaprc
 pwd_link xorg/Xresources ~/.Xresources
 pwd_link xorg/mimeapps.list ~/.local/share/applications/mimeapps.list

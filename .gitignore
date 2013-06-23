@@ -20,5 +20,6 @@ awesome/rc.lua
 awesome/conkyrc
 xorg/xinitrc
 xorg/xbindkeysrc
+xorg/xmodmaprc
 
 *.pyc
