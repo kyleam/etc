@@ -40,26 +40,39 @@ TEXT
 ${uptime_short} ${color Gray35} :: ${color} \
 ## temp
 temp \
-${if_match ${hwmon temp 1} > 45}\
+${if_match ${hwmon 0 temp 1} > 45}\
 ${color #8B0000}\
-${hwmon temp 1}\
+${hwmon 0 temp 1}\
 ${color}\
 ${else}\
-${hwmon temp 1}\
+${hwmon 0 temp 1}\
 ${endif}\
-${if_match ${hwmon temp 2} > 45}\
+${if_match ${hwmon 0 temp 2} > 45}\
 ${color #8B0000}\
-${hwmon temp 2}\
+${hwmon 0 temp 2}\
 ${color}\
 ${else}\
-${hwmon temp 2}\
+${hwmon 0 temp 2}\
 ${endif}\
-${color Gray35} :: ${color} \
+${if_match ${hwmon 0 temp 3} > 45}\
+${color #8B0000}\
+${hwmon 0 temp 3}\
+${color}\
+${else}\
+${hwmon 0 temp 3}\
+${endif}\
+${if_match ${hwmon 0 temp 4} > 45}\
+${color #8B0000}\
+${hwmon 0 temp 4}\
+${color}\
+${else}\
+${hwmon 0 temp 4}\
+${endif} :: \
 ## network
 net \
-${addr eth0} \
-${upspeedf eth0} \
-${downspeedf eth0} ${color Gray35} :: ${color} \
+${addr enp0s25} \
+${upspeedf enp0s25} \
+${downspeedf enp0s25} ${color Gray35} :: ${color} \
 ## ram
 ram \
 ${if_match ${memperc} > 50}\
