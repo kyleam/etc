@@ -40,28 +40,28 @@ TEXT
 ${uptime_short} ${color Gray35} :: ${color} \
 ## temp
 temp \
-${if_match ${hwmon 0 temp 1} > 45}\
+${if_match ${hwmon 0 temp 1} > 70}\
 ${color #8B0000}\
 ${hwmon 0 temp 1}\
 ${color}\
 ${else}\
 ${hwmon 0 temp 1}\
 ${endif}\
-${if_match ${hwmon 0 temp 2} > 45}\
+${if_match ${hwmon 0 temp 2} > 70}\
 ${color #8B0000}\
 ${hwmon 0 temp 2}\
 ${color}\
 ${else}\
 ${hwmon 0 temp 2}\
 ${endif}\
-${if_match ${hwmon 0 temp 3} > 45}\
+${if_match ${hwmon 0 temp 3} > 70}\
 ${color #8B0000}\
 ${hwmon 0 temp 3}\
 ${color}\
 ${else}\
 ${hwmon 0 temp 3}\
 ${endif}\
-${if_match ${hwmon 0 temp 4} > 45}\
+${if_match ${hwmon 0 temp 4} > 70}\
 ${color #8B0000}\
 ${hwmon 0 temp 4}\
 ${color}\
