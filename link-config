@@ -56,10 +56,4 @@ pwd_link shell/bash_profile ~/.bash_profile
 pwd_link r/Renviron ~/.Renviron
 pwd_link r/Rprofile ~/.Rprofile
 
-if [[ -d "$HOME/.config/fontconfig" ]]; then
-    # on arch
-    pwd_link font/fonts.conf ~/.config/fontconfig/fonts.conf
-else
-    # on debian
-    pwd_link font/fonts.conf ~/.fonts.conf
-fi
+pwd_link font/fonts.conf ~/.config/fontconfig/fonts.conf
