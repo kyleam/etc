@@ -16,7 +16,6 @@ python/matplotlib/tex.cache
 uzbl/style.css
 
 # machine-specific links
-awesome/rc.lua
 awesome/conkyrc
 xorg/xinitrc
 xorg/xbindkeysrc

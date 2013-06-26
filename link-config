@@ -29,9 +29,8 @@ pwd_link git/gitconfig ~/.gitconfig
 pwd_link git/global-gitignore ~/.global-gitignore
 pwd_link git/git-completion.bash ~/.git-completion.bash
 
-host_link awesome/rc.lua
-host_link awesome/conkyrc
 pwd_link awesome ~/.config/awesome
+host_link awesome/conkyrc
 pwd_link awesome/conkyrc ~/.conkyrc
 
 pwd_link python/matplotlib ~/.config/matplotlib
