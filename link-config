@@ -57,3 +57,5 @@ pwd_link r/Renviron ~/.Renviron
 pwd_link r/Rprofile ~/.Rprofile
 
 pwd_link font/fonts.conf ~/.config/fontconfig/fonts.conf
+
+pwd_link mpd/mpd.conf ~/.mpd/mpd.conf
