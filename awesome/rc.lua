@@ -204,8 +204,6 @@ root.buttons(awful.util.table.join(
 -- }}}
 
 -- {{{ Key bindings
-vm_start = "VirtualBox --startvm windows7"
-browser_start = "chromium"
 
 globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
@@ -254,10 +252,10 @@ globalkeys = awful.util.table.join(
 
     -- awful.key({ modkey, "Control" }, "n", awful.client.restore),
     -- awful.key({ }, "F12", function () awful.util.spawn("xscreensaver-command -lock") end),
-    awful.key({ modkey,           }, "b",     function () awful.util.spawn(browser_start)    end),
+    awful.key({ modkey,           }, "b",     function () awful.util.spawn("chromium")    end),
     awful.key({ modkey,           }, "u",     function () awful.util.spawn("uzbl-tabbed")    end),
     awful.key({ modkey,           }, "e",     function () awful.util.spawn("emacsclient -c")    end),
-    awful.key({ modkey,           }, "v",     function () awful.util.spawn(vm_start)    end),
+    awful.key({ modkey,           }, "v",     function () awful.util.spawn("VirtualBox --startvm windows7")    end),
     -- Prompt
     awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
 
