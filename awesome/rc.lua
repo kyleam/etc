@@ -256,6 +256,9 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "u",     function () awful.util.spawn("uzbl-tabbed")    end),
     awful.key({ modkey,           }, "e",     function () awful.util.spawn("emacsclient -c")    end),
     awful.key({ modkey,           }, "v",     function () awful.util.spawn("VirtualBox --startvm windows7")    end),
+    awful.key({ modkey,           }, "p",     function () awful.util.spawn("mpc toggle")    end),
+    awful.key({ modkey,           }, "n",     function () awful.util.spawn("mpc next")    end),
+
     -- Prompt
     awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
 
@@ -267,7 +270,7 @@ globalkeys = awful.util.table.join(
                   awful.util.getdir("cache") .. "/history_eval")
               end),
     -- Menubar
-    awful.key({ modkey }, "p", function() menubar.show() end)
+    awful.key({ modkey, "Control" }, "n",     function() menubar.show() end)
 )
 
 clientkeys = awful.util.table.join(
