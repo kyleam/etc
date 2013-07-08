@@ -31,3 +31,5 @@ alias scs='screen -S'
 
 alias et='emacsclient -t'
 alias ec='emacsclient --no-wait -c'
+
+alias ackt='ack TODO'
