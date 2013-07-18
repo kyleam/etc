@@ -1,8 +1,5 @@
 ! Xresources
 
-! because rxvt-unicod-256color $TERM is too long for screen
-URxvt*termName:rxvt-256color
-
 URxvt.font: xft:Droid Sans Mono:size=8:antialias=false
 
 ! URxvt.scrollBar: off
