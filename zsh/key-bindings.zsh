@@ -1,3 +1,6 @@
+bindkey '^o' accept-line
+bindkey '^m' accept-line
+
 # from oh-my-zsh
 
 bindkey -e
