@@ -44,7 +44,7 @@ beautiful.init(themedir .. "/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
-editor = os.getenv("EDITOR") or "editor"
+editor = "emacsclient -c"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
@@ -205,6 +205,13 @@ root.buttons(awful.util.table.join(
 
 -- {{{ Key bindings
 
+browser = "chromium"
+other_browser = "uzbl-tabbed"
+mail = "emacsclient --eval \"(km/gnus-other-frame-always-fetch 1)\""
+vm = "VirtualBox --startvm windows7"
+music_toggle = "mpc toggle"
+music_next = "mpc next"
+
 globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
@@ -227,7 +234,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Shift"   }, "k", function () awful.client.swap.byidx( -1)    end),
     awful.key({ modkey, "Control" }, "j", function () awful.screen.focus_relative( 1) end),
     awful.key({ modkey, "Control" }, "k", function () awful.screen.focus_relative(-1) end),
-    awful.key({ modkey,           }, "u", awful.client.urgent.jumpto),
+    -- awful.key({ modkey,           }, "u", awful.client.urgent.jumpto),
     awful.key({ modkey,           }, "Tab",
         function ()
             awful.client.focus.history.previous()
@@ -237,7 +244,7 @@ globalkeys = awful.util.table.join(
         end),
 
     -- Standard program
-    awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
+    awful.key({ modkey,           }, "'", function () awful.util.spawn(terminal) end),
     awful.key({ modkey, "Control" }, "r", awesome.restart),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit),
 
@@ -252,12 +259,13 @@ globalkeys = awful.util.table.join(
 
     -- awful.key({ modkey, "Control" }, "n", awful.client.restore),
     -- awful.key({ }, "F12", function () awful.util.spawn("xscreensaver-command -lock") end),
-    awful.key({ modkey,           }, "b",     function () awful.util.spawn("chromium")    end),
-    awful.key({ modkey,           }, "u",     function () awful.util.spawn("uzbl-tabbed")    end),
-    awful.key({ modkey,           }, "e",     function () awful.util.spawn("emacsclient -c")    end),
-    awful.key({ modkey,           }, "v",     function () awful.util.spawn("VirtualBox --startvm windows7")    end),
-    awful.key({ modkey,           }, "p",     function () awful.util.spawn("mpc toggle")    end),
-    awful.key({ modkey,           }, "n",     function () awful.util.spawn("mpc next")    end),
+    awful.key({ modkey,           }, "i",     function () awful.util.spawn(browser)    end),
+    awful.key({ modkey, "Shift"   }, "i",     function () awful.util.spawn(other_browser)   end),
+    awful.key({ modkey,           }, ";",     function () awful.util.spawn(editor)    end),
+    awful.key({ modkey,           }, "m",     function () awful.util.spawn(mail)    end),
+    awful.key({ modkey,           }, "v",     function () awful.util.spawn(vm)    end),
+    awful.key({ modkey,           }, ".",     function () awful.util.spawn(music_toggle)    end),
+    awful.key({ modkey, "Shift"   }, ".",     function () awful.util.spawn(music_next)    end),
 
     -- Prompt
     awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
@@ -275,12 +283,12 @@ globalkeys = awful.util.table.join(
 
 clientkeys = awful.util.table.join(
     awful.key({ modkey,           }, "f",      function (c) c.fullscreen = not c.fullscreen  end),
-    awful.key({ modkey,           }, "c",      function (c) c:kill()                         end),
+    awful.key({ modkey,           }, "n",      function (c) c:kill()                         end),
     awful.key({ modkey, "Control" }, "space",  awful.client.floating.toggle                     ),
     awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end),
     awful.key({ modkey,           }, "o",      awful.client.movetoscreen                        ),
     awful.key({ modkey,           }, "t",      function (c) c.ontop = not c.ontop            end),
-    awful.key({ modkey,           }, "m",
+    awful.key({ modkey,           }, "b",
         function (c)
             c.maximized_horizontal = not c.maximized_horizontal
             c.maximized_vertical   = not c.maximized_vertical
