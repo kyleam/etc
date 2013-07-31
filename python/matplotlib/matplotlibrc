@@ -236,11 +236,7 @@ mathtext.default : regular # The default font to use for math.
 #axes.unicode_minus  : True    # use unicode for the minus symbol
                                # rather than hyphen.  See
                                # http://en.wikipedia.org/wiki/Plus_and_minus_signs#Character_codes
-#axes.color_cycle    : b, g, r, c, m, y, k  # color cycle for plot lines
-                                            # as list of string colorspecs:
-                                            # single letter, long name, or
-                                            # web-style hex
-
+axes.color_cycle    : E41A1C, 377EB8, 4DAF4A, 984EA3, FF7F00, FFFF33, A65628, F781BF, 999999
 #polaraxes.grid      : True    # display grid on polar axes
 #axes3d.grid         : True    # display grid on 3d axes
 
