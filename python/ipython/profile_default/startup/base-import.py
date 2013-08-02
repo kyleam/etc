@@ -7,5 +7,4 @@ try:
 except ImportError:
     import pickle
 
-from colors import bgry, fgry, brew, barcolors
 import pltaid
