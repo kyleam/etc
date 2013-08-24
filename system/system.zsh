@@ -1,6 +1,6 @@
-alias nap='sudo pm-suspend'
-alias off='sudo shutdown -h now'
-alias reboot='sudo shutdown -r now'
+alias nap='sudo systemctl suspend'
+alias off='sudo systemctl poweroff'
+alias reboot='sudo systemctl reboot'
 
 #top 10 memory consuming process
 alias topmem="ps axo pid,pcpu,pmem,comm --sort=-rss | head -11"
