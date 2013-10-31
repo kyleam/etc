@@ -21,4 +21,5 @@ xorg/xinitrc
 xorg/xbindkeysrc
 xorg/xmodmaprc
 
+shell/bash_aliases
 *.pyc

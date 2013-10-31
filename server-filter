@@ -4,14 +4,11 @@
 
 ## include
 + /link-config
-+ /collect-zsh-files
 + /vim/*
 + /python/*
 + /python/matplotlib/matplotlibrc
 + /r/*
 + /shell/*
-+ /zsh/*
-+ /zsh/themes/*
 
 ## exclude everthing else
 - *

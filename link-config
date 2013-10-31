@@ -52,6 +52,7 @@ pwd_link zathura ~/.config/zathura
 pwd_link shell/screenrc ~/.screenrc
 pwd_link shell/bashrc ~/.bashrc
 pwd_link shell/bash_profile ~/.bash_profile
+pwd_link shell/bash_aliases ~/.bash_aliases
 
 pwd_link r/Renviron ~/.Renviron
 pwd_link r/Rprofile ~/.Rprofile

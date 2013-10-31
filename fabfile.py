@@ -29,7 +29,6 @@ rsync_filter = 'server-filter'
 link_cmd = './link-config'
 collect_zsh_cmd = './collect-zsh-files'
 
-
 ## server
 
 def create_config_dir():
@@ -43,26 +42,27 @@ def sync():
                                   host=fo.env.host_string))
 
 
-def collect_zsh_server():
-    with fc.cd(etc_dir):
-        fo.run(collect_zsh_cmd)
-
-
 def link_server():
     with fc.cd(etc_dir):
         fo.run(link_cmd)
 
 
 def setup_server():
+    setup_local()
     create_config_dir()
     sync()
-    collect_zsh_server()
     link_server()
 
 
 ## local
 
-def collect_zsh_local():
+
+def create_bash_aliases():
+    with fc.lcd(etc_dir):
+        fo.local('./create-bash-aliases')
+
+
+def collect_zsh():
     with fc.lcd(etc_dir):
         fo.local(collect_zsh_cmd)
 
@@ -76,5 +76,6 @@ def link_local():
 
 
 def setup_local():
-    collect_zsh_local()
+    collect_zsh()
+    create_bash_aliases()
     link_local()
