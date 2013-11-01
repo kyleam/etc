@@ -9,7 +9,6 @@ alias cd..='cd ..'
 alias cd...='cd ../..'
 alias cd....='cd ../../..'
 alias cd.....='cd ../../../..'
-alias cd/='cd /'
 
 # change directory and list
 function chpwd() {
