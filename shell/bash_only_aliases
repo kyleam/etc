@@ -1,2 +1,0 @@
-alias mylast='(echo "## $(date)" && fc -l -1 | cut -f2-)'
-alias ch='mylast >> command-history'

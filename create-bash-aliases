@@ -1,12 +1,4 @@
 #!/usr/bin/env bash
 zsh_files=(shell/*.zsh)
-bash_only=shell/bash_only_aliases
 alias_file=shell/bash_aliases
-## remove aliases that don't transfer over from zsh
-filter='cd/\|mylast'
-
-grep alias ${zsh_files[*]} | \
-    cut -d: -f2 | \
-    grep -v $filter > $alias_file
-
-cat $bash_only >> $alias_file
+grep alias ${zsh_files[*]} | cut -d: -f2 > $alias_file
