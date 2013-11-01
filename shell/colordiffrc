@@ -1,0 +1,13 @@
+# available colours are: white, yellow, green, blue,
+#                        cyan, red, magenta, black,
+#                        darkwhite, darkyellow, darkgreen,
+#                        darkblue, darkcyan, darkred,
+#                        darkmagenta, darkblack
+
+# For a reason not immediately obvious to me, dark* colors give normal
+# text on my system, while the plain color names give the bold text.
+plain=off
+newtext=darkgreen
+oldtext=darkred
+diffstuff=black
+cvsstuff=blue
