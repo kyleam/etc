@@ -11,6 +11,8 @@ alias ipy='ipython'
 
 alias pt2='py.test2'
 alias pt='py.test'
+alias ptd='py.test --doctest-modules'
+alias ptd2='py.test2 --doctest-modules'
 
 alias ns2='nosetests2'
 alias ns='nosetests'
