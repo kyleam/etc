@@ -207,7 +207,6 @@ root.buttons(awful.util.table.join(
 
 browser = "chromium"
 other_browser = "uzbl-tabbed"
-mail = "emacsclient --eval \"(km/gnus-other-frame-always-fetch 1)\""
 vm = "VirtualBox --startvm windows7"
 music_toggle = "mpc toggle"
 music_next = "mpc next"
@@ -262,7 +261,6 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "i",     function () awful.util.spawn(browser)    end),
     awful.key({ modkey, "Shift"   }, "i",     function () awful.util.spawn(other_browser)   end),
     awful.key({ modkey,           }, ";",     function () awful.util.spawn(editor)    end),
-    awful.key({ modkey,           }, "m",     function () awful.util.spawn(mail)    end),
     awful.key({ modkey,           }, "v",     function () awful.util.spawn(vm)    end),
     awful.key({ modkey,           }, ".",     function () awful.util.spawn(music_toggle)    end),
     awful.key({ modkey, "Shift"   }, ".",     function () awful.util.spawn(music_next)    end),
