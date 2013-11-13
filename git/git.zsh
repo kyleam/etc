@@ -70,11 +70,12 @@ alias glgg='git log --graph --max-count=5'
 compdef _git glgg=git-log
 alias glgga='git log --graph --decorate --all'
 compdef _git glgga=git-log
-alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
-alias gln="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative -n5"
-alias gla="git log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
-alias glan="git log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative -n5"
-alias glp="git log -p --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+_gl_format=(format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset')
+alias gl="git log --graph --pretty='${_gl_format[@]}' --abbrev-commit --date=relative"
+alias gln="git log --graph --pretty='${_gl_format[@]}' --abbrev-commit --date=relative -n5"
+alias gla="git log --all --graph --pretty='${_gl_format[@]}' --abbrev-commit --date=relative"
+alias glan="git log --all --graph --pretty='${_gl_format[@]}' --abbrev-commit --date=relative -n5"
+alias glp="git log -p --graph --pretty='${_gl_format[@]}' --abbrev-commit --date=relative"
 alias gss='git status -s'
 compdef _git gss=git-status
 alias ga='git add'
