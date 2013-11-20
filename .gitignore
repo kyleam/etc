@@ -8,6 +8,8 @@ python/ipython/profile_default/history.sqlite
 python/ipython/profile_default/security
 python/ipython/profile_sh
 python/ipython/profile_default/startup/README
+python/ipython/profile_default/log/
+python/ipython/profile_default/pid/
 
 python/matplotlib/fontList.cache
 python/matplotlib/fontList.py3k.cache
