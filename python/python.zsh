@@ -8,6 +8,7 @@ if [ $(whoami) != "root" ]; then
 fi
 
 alias ipy='ipython'
+alias ipyn='ipython notebook --matplotlib=inline'
 
 alias pt2='py.test2'
 alias pt='py.test'
