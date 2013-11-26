@@ -25,3 +25,4 @@ xorg/xmodmaprc
 
 shell/bash_aliases
 *.pyc
+/python/ipython/profile_nbserver/startup/README
