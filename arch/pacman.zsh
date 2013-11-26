@@ -13,9 +13,3 @@ alias pacc='sudo pacman -Sc' # clean cached
 alias pacm='makepkg -fci'
 
 alias mps='makepkg -s'
-
-alias pak='packer -S'
-alias paks='packer -Ss'
-alias paku='packer -Syu'
-alias pakua='packer -Syu --auronly'
-alias pakg='packer -G'
