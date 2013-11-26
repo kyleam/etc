@@ -1,15 +1,14 @@
 alias pac='sudo pacman -S'
 alias pacu='sudo pacman -Syu'
-alias pacs='sudo pacman -Ss'
-alias paci='sudo pacman -Si'
-alias pacli='sudo pacman -Qi' # local info
-alias pacr='sudo pacman -R'
-alias pacrd='sudo pacman -Rs'  # remove deps no longer needed
-alias pacll='sudo pacman -Qqm' # list local
-alias paclo='sudo pacman -Qdt' # list orphans
-alias paco='sudo pacman -Qo' # owner of given file
-alias pacf='sudo pacman -Ql' # all files by given package
+alias pacr='sudo pacman -Rs'  # remove deps no longer needed
 alias pacc='sudo pacman -Sc' # clean cached
 alias pacm='makepkg -fci'
 
+alias pacs='pacman -Ss'
+alias paci='pacman -Si'
+alias pacli='pacman -Qi' # local info
+alias pacll='pacman -Qqm' # list local
+alias paclo='pacman -Qdt' # list orphans
+alias paco='pacman -Qo' # owner of given file
+alias pacf='pacman -Ql' # all files by given package
 alias mps='makepkg -s'
