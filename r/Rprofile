@@ -1,7 +1,7 @@
-require(ggplot2)
-require(plyr)
-require(reshape)
-require(RColorBrewer)
+suppressMessages(require(ggplot2))
+suppressMessages(require(plyr))
+suppressMessages(require(reshape))
+suppressMessages(require(RColorBrewer))
 
 r <- getOption("repos")
 r["CRAN"] <- "http://cran.us.r-project.org"
