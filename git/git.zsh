@@ -66,6 +66,8 @@ compdef gcount=git
 alias gcl='git config --list'
 alias gcp='git cherry-pick'
 compdef _git gcp=git-cherry-pick
+alias gg='git grep -n'
+compdef _git gr=git-grep
 alias glg='git log --stat --max-count=5'
 compdef _git glg=git-log
 alias glgg='git log --graph --max-count=5'
