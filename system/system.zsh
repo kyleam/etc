@@ -11,3 +11,10 @@ alias tg="ping -c2 www.google.com"
 alias fu='fusermount -u'
 alias dup='urxvt &'
 alias am='alsamixer'
+
+function lock () {
+    if [[ -z $(pgrep xscreensaver) ]]; then
+        xscreensaver -no-splash &
+    fi
+    xscreensaver-command --lock
+}
