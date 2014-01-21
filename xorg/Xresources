@@ -55,3 +55,5 @@ URxvt*color14:          #008080
 !white
 URxvt*color7:	        Gray90
 URxvt*color15:	        White
+
+xscreensaver.programs: spotlight -root \n
