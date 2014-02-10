@@ -1,0 +1,14 @@
+set hintchars=hjklasdfgyuiopqwertnmzxcvb
+set editor=emacsclient
+set smartcase
+set focuscontent
+set newtab=all
+
+nnoremap j 4j
+nnoremap k 4k
+noremap J <C-d>
+noremap K <C-u>
+
+cmap <C-g> <Esc>
+imap <C-g> <Esc>
+noremap <C-g> <Esc>

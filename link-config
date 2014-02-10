@@ -24,6 +24,7 @@ function host_link(){
 pwd_link zsh/zshrc ~/.zshrc
 
 pwd_link vim/vimrc ~/.vimrc
+pwd_link vim/vimrc ~/.vimrc
 
 pwd_link git/gitconfig ~/.gitconfig
 pwd_link git/global-gitignore ~/.global-gitignore
@@ -45,6 +46,7 @@ pwd_link xorg/xmodmaprc ~/.xmodmaprc
 pwd_link xorg/Xresources ~/.Xresources
 pwd_link xorg/mimeapps.list ~/.local/share/applications/mimeapps.list
 
+pwd_link firefox/vimperatorrc ~/.vimperatorrc
 pwd_link uzbl ~/.config/uzbl
 
 pwd_link zathura ~/.config/zathura
