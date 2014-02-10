@@ -14,3 +14,5 @@ noremap K <C-u>
 cmap <C-g> <Esc>
 imap <C-g> <Esc>
 noremap <C-g> <Esc>
+
+set status=input,location,bookmark,history,tabcount,position,ssl
