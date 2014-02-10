@@ -1,3 +1,5 @@
+set gui=none
+
 set hintchars=hjklasdfgyuiopqwertnmzxcvb
 set editor=emacsclient
 set smartcase
