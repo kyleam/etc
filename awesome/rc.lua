@@ -205,7 +205,7 @@ root.buttons(awful.util.table.join(
 
 -- {{{ Key bindings
 
-browser = "chromium"
+browser = "firefox"
 other_browser = "uzbl-tabbed"
 vm = "VirtualBox --startvm windows7"
 music_toggle = "mpc toggle"

@@ -1,2 +1,2 @@
-export BROWSER="chromium"
+export BROWSER="firefox"
 export EDITOR="emacsclient -c"

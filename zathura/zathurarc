@@ -4,4 +4,4 @@ set inputbar-bg "#FFFFFF"
 set inputbar-fg "blue"
 
 " now set with xdg-open
-"set browser "chromium %s"
+"set browser "firefox %s"
