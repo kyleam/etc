@@ -147,3 +147,7 @@ function gcpr(){
     git checkout $1 && git cherry-pick $2 && git rebase -i $1 $2
 }
 compdef _git gcpr=git-branch
+
+## mr aliases
+alias mrap='mr auto; mr -j3 push'
+alias mru='mr -j3 update'
