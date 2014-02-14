@@ -149,5 +149,5 @@ function gcpr(){
 compdef _git gcpr=git-branch
 
 ## mr aliases
-alias mrap='mr auto; mr -j3 push'
-alias mru='mr -j3 update'
+alias mrap='mr auto; mr push'
+alias mru='mr update'
