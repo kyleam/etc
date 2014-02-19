@@ -18,3 +18,10 @@ function lock () {
     fi
     xscreensaver-command --lock
 }
+
+## Mount encfs from the name of a public encfs mount point in the
+## present directory. The private directory is assumed to have the same
+## name as public, plus a leading dot.
+function eps () {
+    encfs $PWD/.$1 $PWD/$1
+}
