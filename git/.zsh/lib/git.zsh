@@ -120,7 +120,7 @@ compdef ggpnp=git
 function gbak(){
     currbranch=$(current_branch)
     gremote=$1
-    ## if remote argument, set to origin
+    ## If not remote argument, set to origin.
     : ${gremote:='origin'}
     git branch -m $currbranch.bak && \
         echo :: Backed up $currbranch && \
