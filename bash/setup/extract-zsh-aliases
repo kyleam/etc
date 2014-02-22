@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Usage: extract-zsh-aliases [FILE ...]
+grep alias $@ | cut -d: -f2

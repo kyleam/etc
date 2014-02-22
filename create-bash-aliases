@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-zsh_files=(shell/*.zsh)
-alias_file=shell/bash_aliases
-grep alias ${zsh_files[*]} | cut -d: -f2 > $alias_file

@@ -9,9 +9,7 @@ if [[ -z "$XDG_CACHE_HOME" ]]; then
     export XDG_CACHE_HOME="$HOME/.cache"
 fi
 
-ETC=$XDG_CONFIG_HOME/etc
-PETC=$XDG_CONFIG_HOME/petc  # private config
-ZSH=$ETC/zsh
+ZSH=$HOME/.zsh
 ZSH_LIB=$ZSH/lib
 
 if [[ -d "$HOME/share/zsh" ]]; then
