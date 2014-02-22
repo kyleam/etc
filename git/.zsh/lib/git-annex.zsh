@@ -14,3 +14,14 @@ alias gxw='git annex whereis'
 alias gxt='git annex metadata'
 alias gxv='git annex view'
 alias gxvp='git annex vpop'
+
+# Clear all git annex views.
+function gxclear () {
+    branch=$1
+    : ${branch:='master'}
+    git checkout "$branch"
+    git for-each-ref --format='%(refname:short)' \
+        'refs/heads/views' | \
+        xargs git branch -D
+    rm $(git rev-parse --show-toplevel)/.git/annex/viewlog
+}
