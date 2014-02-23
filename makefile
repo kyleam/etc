@@ -13,4 +13,7 @@ stow:
 unstow:
 	$(STOW_CMD) $(STOW_OPTS) -D $(ARGS)
 
-.PHONY: stow unstow
+root-stow:
+	$(STOW_CMD) $(STOW_OPTS) zsh bash git vim shell
+
+.PHONY: stow unstow root-stow
