@@ -6,7 +6,7 @@ alias gxmv='git annex move'
 alias gxm='git annex merge'
 alias gxcp='git annex copy'
 alias gxl='git annex lock'
-alias gxls='git annex list'
+alias gxls='git annex list --allrepos'
 alias gxu='git annex unlock'
 alias gxw='git annex whereis'
 
