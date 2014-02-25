@@ -33,3 +33,4 @@ alias et='emacsclient -t'
 alias ec='emacsclient --no-wait -c'
 
 alias ackt='ack TODO'
+alias ackf='ack FIXME'
