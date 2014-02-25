@@ -23,6 +23,7 @@ alias d='dirs -v | head -10'
 function mds() { mkdir -p "$1" && cd "$1"; }
 
 alias td='tree -d'
+alias ta='tree -aI ".git"'
 
 alias ls='ls --color'
 alias la='ls -Ah'
