@@ -1,6 +1,6 @@
 The configuration files in this repo are organized by topic and linked
 to their appropriate locations using [stow][1] (an approach that has
-been nicely [described][2] by Brandon Invergo.) If you're interested in
+been nicely [described][2] by Brandon Invergo). If you're interested in
 keeping your configuration files in git without using symbolic links,
 have a look at [vcsh][3].
 
