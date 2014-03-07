@@ -4,3 +4,6 @@ set inputbar-bg "#FFFFFF"
 set inputbar-fg "blue"
 
 set scroll-step 200
+
+unmap d
+map D toggle_page_mode
