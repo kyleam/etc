@@ -71,6 +71,8 @@ alias ga='git add'
 compdef _git ga=git-add
 alias gm='git merge'
 compdef _git gm=git-merge
+alias gre='git reset'
+compdef _git gre=git-reset
 alias grh='git reset HEAD'
 alias grhh='git reset HEAD --hard'
 alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
