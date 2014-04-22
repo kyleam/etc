@@ -1,19 +1,19 @@
-STOW_CMD=stow
-STOW_OPTS=-v --ignore=setup --no-folding -t ~
+STOW = stow
+STOW_OPTS = -v --ignore=setup --no-folding -t ~
 
-HOST=$(shell hostname)
-HOST_DIRS:=$(shell find . -maxdepth 1 -type d -name "h-$(HOST)-*" -printf "%f ")
-FIND_EXCL=\( ! -name "h-*" \) \( ! -name .git \)  \( ! -name . \)
-ARGS:=$(shell find . -maxdepth 1 -type d $(FIND_EXCL)  -printf "%f ")
-ARGS+=$(HOST_DIRS)
+HOST := $(shell hostname)
+host_dirs := $(shell find . -maxdepth 1 -type d -name "h-$(HOST)-*" -printf "%f ")
+find_excl = \( ! -name "h-*" \) \( ! -name .git \)  \( ! -name . \)
+args := $(shell find . -maxdepth 1 -type d $(find_excl)  -printf "%f ")
+args += $(host_dirs)
 
 stow:
-	$(STOW_CMD) $(STOW_OPTS) $(ARGS)
+	$(STOW) $(STOW_OPTS) $(args)
 
 unstow:
-	$(STOW_CMD) $(STOW_OPTS) -D $(ARGS)
+	$(STOW) $(STOW_OPTS) -D $(args)
 
 root-stow:
-	$(STOW_CMD) $(STOW_OPTS) zsh bash git vim shell
+	$(STOW) $(STOW_OPTS) zsh bash git vim shell
 
 .PHONY: stow unstow root-stow
