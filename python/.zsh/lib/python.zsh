@@ -1,5 +1,5 @@
-if [[ $PYTHONPATH != $HOME/lib/python:* ]]; then
-   export PYTHONPATH=$HOME/lib/python:$PYTHONPATH
+if [[ $PYTHONPATH != $HOME/.local/lib/python:* ]]; then
+   export PYTHONPATH=$HOME/.local/lib/python:$PYTHONPATH
 fi
 
 if [ $(whoami) != "root" ]; then
