@@ -1,1 +1,1 @@
-PATH="/usr/lib/ccache/bin:$HOME/.local/bin:$PATH"
+PATH="$HOME/.cabal/bin:/usr/lib/ccache/bin:$HOME/.local/bin:$PATH"
