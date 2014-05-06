@@ -5,5 +5,6 @@ set inputbar-fg "blue"
 
 set scroll-step 200
 
-unmap d
+map u scroll half-up
+map d scroll half-down
 map D toggle_page_mode
