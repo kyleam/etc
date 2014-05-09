@@ -1,9 +1,9 @@
 # https://wiki.archlinux.org/index.php/Touchpad_Synaptics#Software_Toggle
-"~/bin/toggle-trackpad.sh"
+"toggle-trackpad"
      m:0x5 + c:65
      Control+Shift + space
 
-"~/bin/sleep-screen.sh"
+"sleep-screen"
     m:0x0 + c:156
     XF86Launch1
 
