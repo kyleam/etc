@@ -1,6 +1,7 @@
 ! Xresources
 
 URxvt.font: xft:Droid Sans Mono:size=8:antialias=false
+emacs.font: Droid Sans Mono-9
 
 ! URxvt.scrollBar: off
 
