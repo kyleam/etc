@@ -11,5 +11,6 @@ alias paclo='pacman -Qdt' # list orphans
 alias paco='pacman -Qo' # owner of given file
 alias pacf='pacman -Ql' # all files by given package
 
+alias pacm='sudo pacman -U'
 alias mps='makepkg -s'
 alias mpsi='makepkg -si'
