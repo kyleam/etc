@@ -8,3 +8,6 @@ function mkrt() {
         "import os.path; print(os.path.relpath(\"$PWD/$1\", \"$root\"))")
     make -C $root $target
 }
+
+
+alias mkn='make -n'
