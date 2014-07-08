@@ -32,5 +32,8 @@ alias scs='screen -S'
 alias et='emacsclient -t'
 alias ec='emacsclient --no-wait -c'
 
+## Prevent unintentionally entering vi.
+alias vi='vim'
+
 alias ackt='ack TODO'
 alias ackf='ack FIXME'
