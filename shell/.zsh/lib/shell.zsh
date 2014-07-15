@@ -37,3 +37,5 @@ alias vi='vim'
 
 alias ackt='ack TODO'
 alias ackf='ack FIXME'
+
+alias duh='du -h'
