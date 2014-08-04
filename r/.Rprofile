@@ -1,6 +1,7 @@
 suppressMessages(require(ggplot2))
 suppressMessages(require(plyr))
 suppressMessages(require(reshape))
+suppressMessages(require(data.table))
 suppressMessages(require(RColorBrewer))
 
 r <- getOption("repos")
