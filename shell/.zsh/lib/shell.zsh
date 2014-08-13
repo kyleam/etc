@@ -39,3 +39,6 @@ alias ackt='ack TODO'
 alias ackf='ack FIXME'
 
 alias duh='du -h'
+
+alias pp='column -t'
+alias ppc='column -t -s","'
