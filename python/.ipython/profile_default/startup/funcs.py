@@ -1,4 +1,5 @@
 from itertools import takewhile
+import numpy as np
 import pandas as pd
 
 
@@ -29,3 +30,11 @@ def see(dat, n=5):
 
     ## all others, just return list of n iterations
     return [item for _, item in takewhile(under_enum, enumerate(dat))]
+
+
+def ht(df, n=5):
+    """Return first and last `n` rows of data frame.
+    """
+    head_idx = np.arange(n)
+    tail_idx = np.arange(df.shape[0] - n, df.shape[0])
+    return df.iloc[np.concatenate([head_idx, tail_idx])]
