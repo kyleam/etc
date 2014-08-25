@@ -257,7 +257,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
 
     -- awful.key({ modkey, "Control" }, "n", awful.client.restore),
-    -- awful.key({ }, "F12", function () awful.util.spawn("xscreensaver-command -lock") end),
+    awful.key({ }, "F12", function () awful.util.spawn("slock") end),
     awful.key({ modkey,           }, "i",     function () awful.util.spawn(browser)    end),
     awful.key({ modkey, "Shift"   }, "i",     function () awful.util.spawn(other_browser)   end),
     awful.key({ modkey,           }, ";",     function () awful.util.spawn(editor)    end),
