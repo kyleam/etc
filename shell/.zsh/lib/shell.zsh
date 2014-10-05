@@ -42,3 +42,5 @@ alias duh='du -h'
 
 alias pp='column -t'
 alias ppc='column -t -s","'
+
+alias ndate='date +%Y%m%d'
