@@ -10,3 +10,9 @@
 *.pl     diff=perl
 *.html   diff=html
 *.xhtml  diff=html
+
+*.lisp   diff=lisp
+*.el     diff=lisp
+*.r      diff=rstats
+*.R      diff=rstats
+*.org    diff=orgmode

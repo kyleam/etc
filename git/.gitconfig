@@ -33,6 +33,14 @@
         tool = vimdiff
         renames = copies
         mnemonicprefix = true
+
+[diff "lisp"]
+        xfuncname = "^(\\(.*)$"
+[diff "rstats"]
+        xfuncname = "^([a-zA-z.]+ <- function.*)$"
+[diff "orgmode"]
+        xfuncname = "^(\\*+.*)$"
+
 [difftool]
         prompt = false
 
