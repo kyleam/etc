@@ -16,6 +16,8 @@ emacs --daemon &
 
 sh ~/.fehbg &
 
+unclutter &
+
 # dual monitor
 xrandr --output DVI-0 --mode 1280x1024 --right-of DVI-1
 

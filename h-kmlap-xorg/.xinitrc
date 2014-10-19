@@ -16,6 +16,8 @@ emacs --daemon &
 
 sh ~/.fehbg &
 
+unclutter &
+
 ## turn off trackpad when typing
 synclient TouchpadOff=$(synclient -l | grep -c 'TouchpadOff.*=.*0')
 xbindkeys
