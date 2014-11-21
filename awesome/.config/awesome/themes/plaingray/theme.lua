@@ -20,8 +20,8 @@ themedir = home .. "/.config/awesome/themes/plaingray/"
 theme.font          = "Droid Sans Mono 8"
 
 -- {{{ Colors
-theme.bg_focus     = "#cccccc"
-theme.bg_normal      = "#cccccc"
+theme.bg_focus     = "#dddddd"
+theme.bg_normal      = "#dddddd"
 theme.bg_urgent     = "#ffdd00"
 
 theme.fg_normal = "#666666"
