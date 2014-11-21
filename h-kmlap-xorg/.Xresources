@@ -15,8 +15,8 @@ URxvt*scrollColor: #000000
 URxvt*saveLines: 5500
 
 URxvt*cursorColor: Gray45
-URxvt*colorBD: Grey25
-URxvt*colorUL: Grey45
+URxvt*colorBD: Gray25
+URxvt*colorUL: Gray45
 URxvt*pointerColor2: Black
 URxvt*background: White
 URxvt*foreground: Black
@@ -27,7 +27,7 @@ URxvt*foreground: Black
 
 !black
 URxvt*color0: Black
-URxvt*color8: Grey15
+URxvt*color8: Gray15
 
 !red
 URxvt*color1: #8B0000
