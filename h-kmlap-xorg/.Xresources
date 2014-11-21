@@ -6,53 +6,53 @@ emacs.font: Droid Sans Mono-10
 ! URxvt.scrollBar: off
 
 ! from https://raw.github.com/shawndellysse/xinitrc/master/Xdefaults
-URxvt*geometry:         	85x30
+URxvt*geometry: 85x30
 
-URxvt*scrollBar:		false
-URxvt*scrollBar_floating:	true
-URxvt*scrollBar_right:	false
-URxvt*scrollColor:		#000000
-URxvt*saveLines:		5500
+URxvt*scrollBar: false
+URxvt*scrollBar_floating: true
+URxvt*scrollBar_right: false
+URxvt*scrollColor: #000000
+URxvt*saveLines: 5500
 
-URxvt*cursorColor:		Gray45
-URxvt*colorBD:		Grey25
-URxvt*colorUL:		Grey45
-URxvt*pointerColor2:		Black
-URxvt*background:       	White
-URxvt*foreground:       	Black
+URxvt*cursorColor: Gray45
+URxvt*colorBD: Grey25
+URxvt*colorUL: Grey45
+URxvt*pointerColor2: Black
+URxvt*background: White
+URxvt*foreground: Black
 
 !colors
 
 !second color is for bold
 
 !black
-URxvt*color0:		Black
-URxvt*color8:		Grey15
+URxvt*color0: Black
+URxvt*color8: Grey15
 
 !red
-URxvt*color1:	        #8B0000
-URxvt*color9:	        #8B0000
+URxvt*color1: #8B0000
+URxvt*color9: #8B0000
 
 !green
-URxvt*color2:	        #006400
-URxvt*color10:	        #006400
+URxvt*color2: #006400
+URxvt*color10: #006400
 
 !yellow
-URxvt*color3:	        #FF4500
-URxvt*color11:	        #FF4500
+URxvt*color3: #FF4500
+URxvt*color11: #FF4500
 
 !blue
-URxvt*color4:	        #0000FF
-URxvt*color12:	        #0000FF
+URxvt*color4: #0000FF
+URxvt*color12: #0000FF
 
 !magenta
-URxvt*color5:	        #4B0082
-URxvt*color13:	        #4B0082
+URxvt*color5: #4B0082
+URxvt*color13: #4B0082
 
 !cyan
-URxvt*color6:           #008080
-URxvt*color14:          #008080
+URxvt*color6: #008080
+URxvt*color14: #008080
 
 !white
-URxvt*color7:	        Gray90
-URxvt*color15:	        White
+URxvt*color7: Gray90
+URxvt*color15: White
