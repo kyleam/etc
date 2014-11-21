@@ -14,7 +14,7 @@ sudo modprobe -r pcspkr
 
 emacs --daemon &
 
-sh ~/.fehbg &
+xsetroot -solid "#dddddd"
 
 unclutter &
 
