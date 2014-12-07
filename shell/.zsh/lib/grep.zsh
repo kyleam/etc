@@ -1,5 +1,6 @@
-export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;32'
+
+alias grep='/usr/bin/grep --color=auto'
 
 # block grep
 function bgrep() {
