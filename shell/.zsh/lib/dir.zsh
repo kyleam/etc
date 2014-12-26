@@ -10,12 +10,6 @@ alias cd...='cd ../..'
 alias cd....='cd ../../..'
 alias cd.....='cd ../../../..'
 
-# change directory and list
-function chpwd() {
-    emulate -L zsh
-        ls -a
-}
-
 alias md='mkdir -p'
 alias rd=rmdir
 alias d='dirs -v | head -10'
