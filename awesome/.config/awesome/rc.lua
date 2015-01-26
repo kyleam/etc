@@ -44,8 +44,9 @@ beautiful.init(themedir .. "/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
-editor = "emacsclient -c"
+editor = "emacsclient --server-file=default -c"
 editor_cmd = terminal .. " -e " .. editor
+mail_cmd = "emacsclient --server-file=mail -c"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -260,6 +261,7 @@ globalkeys = awful.util.table.join(
     awful.key({ }, "F12", function () awful.util.spawn("slock") end),
     awful.key({ modkey,           }, "i",     function () awful.util.spawn(browser)    end),
     awful.key({ modkey, "Shift"   }, "i",     function () awful.util.spawn(other_browser)   end),
+    awful.key({ modkey,           }, "m",     function () awful.util.spawn(mail_cmd) end),
     awful.key({ modkey,           }, ";",     function () awful.util.spawn(editor)    end),
     awful.key({ modkey,           }, "v",     function () awful.util.spawn(vm)    end),
     awful.key({ modkey,           }, ".",     function () awful.util.spawn(music_toggle)    end),

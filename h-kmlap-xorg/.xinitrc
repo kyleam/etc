@@ -12,8 +12,6 @@ sudo modprobe -r pcspkr
 
 /usr/bin/conky -q &
 
-emacs --daemon &
-
 xsetroot -solid "#dddddd"
 
 unclutter &
