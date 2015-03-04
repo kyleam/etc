@@ -44,3 +44,7 @@ alias pp='column -t'
 alias ppc='column -t -s","'
 
 alias ndate='date +%Y%m%d'
+
+function ris2bib() {
+    ris2xml $1 | xml2bib
+}
