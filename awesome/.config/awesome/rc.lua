@@ -244,7 +244,7 @@ globalkeys = awful.util.table.join(
         end),
 
     -- Standard program
-    awful.key({ modkey,           }, "'", function () awful.util.spawn(terminal) end),
+    awful.key({ modkey,           }, "u", function () awful.util.spawn(terminal) end),
     awful.key({ modkey, "Control" }, "r", awesome.restart),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit),
 
@@ -259,10 +259,10 @@ globalkeys = awful.util.table.join(
 
     -- awful.key({ modkey, "Control" }, "n", awful.client.restore),
     awful.key({ }, "F12", function () awful.util.spawn("slock") end),
-    awful.key({ modkey,           }, "i",     function () awful.util.spawn(browser)    end),
-    awful.key({ modkey, "Shift"   }, "i",     function () awful.util.spawn(other_browser)   end),
+    awful.key({ modkey,           }, "y",     function () awful.util.spawn(browser)    end),
+    awful.key({ modkey, "Shift"   }, "y",     function () awful.util.spawn(other_browser)   end),
     awful.key({ modkey,           }, "m",     function () awful.util.spawn(mail_cmd) end),
-    awful.key({ modkey,           }, ";",     function () awful.util.spawn(editor)    end),
+    awful.key({ modkey,           }, "i",     function () awful.util.spawn(editor)    end),
     awful.key({ modkey,           }, "v",     function () awful.util.spawn(vm)    end),
     awful.key({ modkey,           }, ".",     function () awful.util.spawn(music_toggle)    end),
     awful.key({ modkey, "Shift"   }, ".",     function () awful.util.spawn(music_next)    end),
