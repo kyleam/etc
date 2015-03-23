@@ -51,3 +51,7 @@ alias ndate='date +%Y%m%d'
 function ris2bib() {
     ris2xml $1 | xml2bib
 }
+
+function bib2endnote() {
+    bib2xml $1 | xml2end
+}
