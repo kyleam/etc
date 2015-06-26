@@ -51,6 +51,8 @@ _gl_format=(format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset')
 alias gl="git log --graph --pretty='${_gl_format[@]}' --abbrev-commit --date=relative"
 alias gla="git log --all --graph --pretty='${_gl_format[@]}' --abbrev-commit --date=relative"
 alias glp="git log -p --graph --pretty='${_gl_format[@]}' --abbrev-commit --date=relative"
+alias gllr="git log --left-right --oneline"
+compdef _git gllr=git-log
 alias gss='git status -s'
 compdef _git gss=git-status
 alias ga='git add'
