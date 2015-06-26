@@ -1,55 +1,55 @@
 [commit]
 
 [core]
-        editor = vim +1
-        autocrlf = input
-        whitespace = trailing-space,space-before-tab
-        excludesfile = ~/.global-gitignore
+	editor = vim +1
+	autocrlf = input
+	whitespace = trailing-space,space-before-tab
+	excludesfile = ~/.global-gitignore
 
 [alias]
-        # See git.zsh for shell aliases.
-        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-        lga = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-        lgp = log -p --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-        st = status
-        co = checkout
-        cb = checkout -b
-        df = diff
-        br = branch
-        ba = branch -a
-        brm = branch -m
-        unstage = reset HEAD --
-        last = log -1 HEAD
-        ci = commit
-        cim = commit -m
-        cia = commit -a
-        ciam = commit -am
-        re = rebase
-        ri = rebase -i
+	# See git.zsh for shell aliases.
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	lga = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	lgp = log -p --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	st = status
+	co = checkout
+	cb = checkout -b
+	df = diff
+	br = branch
+	ba = branch -a
+	brm = branch -m
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	ci = commit
+	cim = commit -m
+	cia = commit -a
+	ciam = commit -am
+	re = rebase
+	ri = rebase -i
 [color]
-        ui = auto
+	ui = auto
 [diff]
-        tool = vimdiff
-        renames = copies
-        mnemonicprefix = true
+	tool = vimdiff
+	renames = copies
+	mnemonicprefix = true
 
 [diff "lisp"]
-        xfuncname = "^(\\(.*)$"
+	xfuncname = "^(\\(.*)$"
 [diff "rstats"]
-        xfuncname = "^([a-zA-z.]+ <- function.*)$"
+	xfuncname = "^([a-zA-z.]+ <- function.*)$"
 [diff "orgmode"]
-        xfuncname = "^(\\*+.*)$"
+	xfuncname = "^(\\*+.*)$"
 
 [difftool]
-        prompt = false
+	prompt = false
 
 [merge]
-        tool = vimdiff
-        stat = true
+	tool = vimdiff
+	stat = true
 [advice]
-        statusHints = false
-        pushNonFastForward = false
+	statusHints = false
+	pushNonFastForward = false
 [branch]
-        autosetupmerge = true
+	autosetupmerge = true
 [push]
-        default = tracking
+	default = tracking
