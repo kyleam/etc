@@ -53,6 +53,10 @@ alias gla="git log --all --graph --pretty='${_gl_format[@]}' --abbrev-commit --d
 alias glp="git log -p --graph --pretty='${_gl_format[@]}' --abbrev-commit --date=relative"
 alias gllr="git log --left-right --oneline"
 compdef _git gllr=git-log
+alias gsh="git show"
+compdef _git gsh=git-show
+alias gshs="git show --stat"
+compdef _git gshs=git-show
 alias gss='git status -s'
 compdef _git gss=git-status
 alias ga='git add'
