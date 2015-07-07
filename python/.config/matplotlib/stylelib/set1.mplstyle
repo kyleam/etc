@@ -1,0 +1,21 @@
+
+text.color: 0.3
+
+axes.color_cycle: 377EB8, E41A1C, 4DAF4A, 984EA3, FF7F00, FFFF33, A65628, F781BF, 999999
+axes.edgecolor: 0.3
+axes.labelcolor: 0.3
+
+lines.color: 0.3
+
+patch.edgecolor: w
+patch.facecolor: 0.6
+
+xtick.color: 0.3
+ytick.color: 0.3
+
+xtick.major.size: 2.0
+ytick.major.size: 2.0
+
+legend.fontsize: medium
+legend.numpoints: 1
+legend.scatterpoints: 1
