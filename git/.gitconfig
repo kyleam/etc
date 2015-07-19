@@ -46,6 +46,7 @@
 [merge]
 	tool = vimdiff
 	stat = true
+	conflictstyle = diff3
 [advice]
 	statusHints = false
 	pushNonFastForward = false
