@@ -29,7 +29,6 @@
 [color]
 	ui = auto
 [diff]
-	tool = vimdiff
 	renames = copies
 	mnemonicprefix = true
 
@@ -44,7 +43,6 @@
 	prompt = false
 
 [merge]
-	tool = vimdiff
 	stat = true
 	conflictstyle = diff3
 [advice]
