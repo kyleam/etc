@@ -1,4 +1,4 @@
-text.latex.preamble: \usepackage{sfmath}
+text.latex.preamble: \usepackage{sfmath}, \usepackage{amsmath}
 text.usetex: true
 font.family: sans-serif
 font.sans-serif: Helvetica
