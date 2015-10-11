@@ -38,6 +38,8 @@
 	xfuncname = "^([a-zA-z.]+ <- function.*)$"
 [diff "orgmode"]
 	xfuncname = "^(\\*+.*)$"
+[diff "snakemake"]
+	xfuncname = "^(rule .*)$"
 
 [difftool]
 	prompt = false
