@@ -18,10 +18,9 @@ fi
 autoload -U compinit
 compinit -i
 
-ZSH_THEME="mytheme-red"  # overridden by computer-specific setup
+autoload -U colors && colors
+PS1="[%m: %c]%# "
 
 for config_file in $ZSH_LIB/*; do
     source $config_file
 done
-
-source $ZSH/themes/$ZSH_THEME.zsh-theme

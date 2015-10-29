@@ -1,2 +1,1 @@
-# laptop specific setting
-ZSH_THEME="mytheme-yellow"
+PS1="%{$fg[yellow]%}[%{$reset_color%}%m: %c%{$fg[yellow]%}]%{$reset_color%}%# "

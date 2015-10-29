@@ -1,2 +1,1 @@
-# desktop specific setting
-ZSH_THEME="mytheme-blue"
+PS1="%{$fg[blue]%}[%{$reset_color%}%m: %c%{$fg[blue]%}]%{$reset_color%}%# "

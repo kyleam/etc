@@ -13,7 +13,7 @@ shopt -s histappend
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-PS1='\n\u@\h: \w\n> '
+PS1="[\h: \W]\$ "
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
