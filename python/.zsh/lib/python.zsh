@@ -1,7 +1,3 @@
-if [[ $PYTHONPATH != $HOME/.local/lib/python:* ]]; then
-   export PYTHONPATH=$HOME/.local/lib/python:$PYTHONPATH
-fi
-
 alias ipy='ipython'
 alias ipyn='ipython notebook --matplotlib=inline'
 
