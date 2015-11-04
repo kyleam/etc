@@ -5,15 +5,8 @@ alias to='pushd'
 alias ot='popd'
 
 alias ..='cd ..'
-alias cd..='cd ..'
-alias cd...='cd ../..'
-alias cd....='cd ../../..'
-alias cd.....='cd ../../../..'
 
 alias md='mkdir -p'
-alias rd=rmdir
-alias d='dirs -v | head -10'
-# go to new directory
 function mds() { mkdir -p "$1" && cd "$1"; }
 
 alias td='tree -d'
