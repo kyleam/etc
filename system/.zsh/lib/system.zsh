@@ -18,3 +18,5 @@ alias am='alsamixer'
 function eps () {
     encfs $PWD/.$1 $PWD/$1
 }
+
+alias wm='startx'
