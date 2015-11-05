@@ -2,11 +2,6 @@ if [[ $PYTHONPATH != $HOME/.local/lib/python:* ]]; then
    export PYTHONPATH=$HOME/.local/lib/python:$PYTHONPATH
 fi
 
-if [ $(whoami) != "root" ]; then
-    export WORKON_HOME=$HOME/.pyenv
-    source $(which virtualenvwrapper.sh) > /dev/null
-fi
-
 alias ipy='ipython'
 alias ipyn='ipython notebook --matplotlib=inline'
 
