@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-find . -name '*.zsh' -type f \
-    | xargs bash/setup/extract-zsh-aliases > bash/.bash_aliases
