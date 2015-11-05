@@ -3,14 +3,17 @@ STOW_OPTS = -v --ignore=setup --no-folding -t ~
 
 HOST := $(shell hostname)
 host_dirs := $(shell find . -maxdepth 1 -type d -name "h-$(HOST)-*" -printf "%f ")
-find_excl = \( ! -name "h-*" \) \( ! -name .git \)  \( ! -name . \)
-args := $(shell find . -maxdepth 1 -type d $(find_excl)  -printf "%f ")
-args += $(host_dirs)
 
-stow:
-	$(STOW) $(STOW_OPTS) $(args)
+active = arch awesome firefox font git haskell mpd \
+	 python r shell system vim zathura zsh
+
+stow: stow_host
+	$(STOW) $(STOW_OPTS) $(active)
+
+stow_host:
+	$(STOW) $(STOW_OPTS) $(host_dirs)
 
 unstow:
-	$(STOW) $(STOW_OPTS) -D $(args)
+	$(STOW) $(STOW_OPTS) -D $(active)
 
 .PHONY: stow unstow
