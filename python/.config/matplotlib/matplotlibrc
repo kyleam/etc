@@ -1,7 +1,6 @@
 backend      : Qt4Agg
 toolbar      : None   # None | toolbar2  ("classic" is deprecated)
 
-savefig.bbox: tight
 savefig.format: pdf
 
 figure.figsize: 4.0, 3.0
