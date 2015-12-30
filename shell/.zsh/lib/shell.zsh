@@ -5,8 +5,6 @@ alias smn='snakemake -pn'
 
 export GREP_COLOR='1;32'
 
-alias grep='/usr/bin/grep --color=auto'
-
 function bgrep() {
     grep -A3 -B3 "$@"
 }
