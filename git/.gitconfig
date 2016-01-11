@@ -30,7 +30,6 @@
 	ui = auto
 [diff]
 	renames = copies
-	mnemonicprefix = true
 
 [diff "lisp"]
 	xfuncname = "^(\\(.*)$"
