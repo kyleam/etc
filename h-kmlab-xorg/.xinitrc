@@ -16,7 +16,6 @@ xsetroot -solid "#dddddd"
 
 unclutter &
 
-# dual monitor
-xrandr --output DVI-0 --mode 1280x1024 --right-of DVI-1
+xrandr --output DVI-1 --off
 
 exec awesome
