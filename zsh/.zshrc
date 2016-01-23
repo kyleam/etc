@@ -23,3 +23,18 @@ PS1="[%m: %c]%# "
 for config_file in $ZSH_LIB/*; do
     source $config_file
 done
+
+case $TERM in
+  (*xterm* | rxvt*)
+    function precmd {
+      # print -Pn "\e]0;zsh%L %(1j,%j job%(2j|s|); ,)%~\a"
+      # print -Pn "\e]0; %~\a"
+      print -Pn "\e]0; %~/ - urxvt\a"
+    }
+
+    function preexec {
+      printf "\033]0;%s\a" "$1"
+    }
+
+  ;;
+esac
