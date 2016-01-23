@@ -8,3 +8,5 @@ set scroll-step 200
 map u scroll half-up
 map d scroll half-down
 map D toggle_page_mode
+
+set window-title-basename true
