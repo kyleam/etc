@@ -4,7 +4,7 @@ STOW_OPTS = -v --ignore=setup --no-folding -t ~
 HOST := $(shell hostname)
 host_dirs := $(shell find . -maxdepth 1 -type d -name "h-$(HOST)-*" -printf "%f ")
 
-active = arch awesome firefox font git haskell mpd \
+active = arch firefox font git haskell i3wm mpd \
 	 python r shell system vim zathura zsh
 
 stow: stow_host

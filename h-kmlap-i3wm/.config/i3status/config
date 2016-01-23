@@ -1,0 +1,41 @@
+
+general {
+    colors = true
+    color_good = "#333333"
+}
+
+order += "wireless wlan0"
+order += "battery 0"
+order += "cpu_temperature 0"
+order += "cpu_temperature 1"
+order += "cpu_usage"
+order += "tztime local"
+
+wireless wlan0 {
+    format_up = "W: (%quality, %bitrate) %ip"
+    format_down = "W: down"
+}
+
+battery 0 {
+    last_full_capacity = true
+    low_threshold = 20
+    threshold_type = "percentage"
+}
+
+cpu_temperature 0 {
+    format = "T: %degrees"
+    max_threshold = 60
+}
+
+cpu_temperature 1 {
+    format = "T: %degrees"
+    max_threshold = 60
+}
+
+cpu_usage {
+    format = "CPU %usage"
+}
+
+tztime local {
+    format = "%m-%d %H:%M"
+}

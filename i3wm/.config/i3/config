@@ -1,0 +1,127 @@
+
+set $mod Mod4
+
+font pango:DejaVu Sans Mono 8
+
+default_orientation vertical
+focus_follows_mouse no
+force_focus_wrapping yes
+workspace_auto_back_and_forth yes
+
+# workspace 9 output DVI-0
+
+bindsym $mod+d exec dmenu_run
+bindsym $mod+i exec emacsclient --server-file=default -c
+bindsym $mod+m exec emacsclient --server-file=mail -c
+bindsym $mod+u exec i3-sensible-terminal
+bindsym $mod+y exec firefox
+bindsym F12 exec slock
+
+bindsym $mod+n kill
+
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+bindsym $mod+Shift+o move workspace to output right
+
+bindsym $mod+comma split v
+bindsym $mod+period split h
+
+bindsym $mod+f fullscreen toggle
+
+bindsym $mod+o layout toggle split
+bindsym $mod+bracketright layout stacking
+bindsym $mod+bracketleft layout tabbed
+
+bindsym $mod+p focus parent
+bindsym $mod+b focus child
+
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+
+bindsym $mod+Shift+space floating toggle
+
+floating_modifier $mod
+bindsym $mod+space focus mode_toggle
+
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+bindsym $mod+Shift+e exec i3-msg exit
+
+bindsym $mod+r mode "resize"
+mode "resize" {
+    bindsym h           resize shrink width 10 px or 10 ppt
+    bindsym j           resize shrink height 10 px or 10 ppt
+    bindsym k           resize grow height 10 px or 10 ppt
+    bindsym l           resize grow width 10 px or 10 ppt
+
+    bindsym Left        resize shrink width 10 px or 10 ppt
+    bindsym Down        resize grow height 10 px or 10 ppt
+    bindsym Up          resize shrink height 10 px or 10 ppt
+    bindsym Right       resize grow width 10 px or 10 ppt
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+# class                 border  backgr. text    indicator
+client.focused          #4c7899 #e5e5e5 #000000 #285577
+client.focused_inactive #333333 #dddddd #666666 #484e50
+client.unfocused        #333333 #b3b3b3 #333333 #292d2e
+client.urgent           #2f343a #900000 #ffffff #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000
+client.background       #ffffff
+
+bar {
+    status_command i3status
+    position bottom
+    # mode hide
+    # modifier $mod
+    colors {
+        background #dddddd
+        statusline #333333
+        separator #0000CD
+
+        focused_workspace  #dddddd #336688 #ffffff
+        active_workspace   #dddddd #dddddd #333333
+        inactive_workspace #dddddd #b3b3b3 #333333
+        urgent_workspace   #2f343a #900000 #ffffff
+    }
+}

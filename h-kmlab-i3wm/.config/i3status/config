@@ -1,0 +1,22 @@
+
+general {
+    colors = true
+    color_good = "#333333"
+}
+
+order += "cpu_temperature 0"
+order += "cpu_usage"
+order += "tztime local"
+
+cpu_temperature 0 {
+    format = "T: %degrees"
+    max_threshold = 60
+}
+
+cpu_usage {
+    format = "CPU %usage"
+}
+
+tztime local {
+    format = "%m-%d %H:%M"
+}
