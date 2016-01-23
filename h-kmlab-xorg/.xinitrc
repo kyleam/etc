@@ -1,13 +1,10 @@
 #!/bin/sh
 
 xrdb "$HOME/.Xresources"
-
-# set up xmodmap; doesn't seem to be loading automatically
 xmodmap ~/.xmodmaprc
+xsetroot -solid "#dddddd"
 
 /usr/bin/conky -q &
-
-xsetroot -solid "#dddddd"
 
 unclutter &
 
