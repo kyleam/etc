@@ -53,3 +53,5 @@
 	autosetupmerge = true
 [push]
 	default = current
+[format]
+	coverLetter = auto
