@@ -1,4 +1,4 @@
-backend      : Qt4Agg
+backend      : TkAgg
 toolbar      : None   # None | toolbar2  ("classic" is deprecated)
 
 savefig.format: pdf
