@@ -15,6 +15,8 @@ bindsym $mod+i exec emacsclient --server-file=default -c
 bindsym $mod+m exec emacsclient --server-file=mail -c
 bindsym $mod+u exec i3-sensible-terminal
 bindsym $mod+y exec firefox
+bindsym $mod+backslash exec mpc toggle
+bindsym $mod+Shift+backslash exec mpc next
 bindsym F12 exec slock
 
 bindsym $mod+n kill
