@@ -1,7 +1,7 @@
 ! Xresources
 
-URxvt.font: xft:Droid Sans Mono:size=9:antialias=false
-emacs.font: Droid Sans Mono-10
+URxvt.font: xft:DejaVu Sans Mono:size=10
+emacs.font: DejaVu Sans Mono-10
 
 ! URxvt.scrollBar: off
 
