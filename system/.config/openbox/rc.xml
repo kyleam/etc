@@ -295,13 +295,65 @@
   </keybind>
 
   <!-- Keybindings for running applications -->
-  <keybind key="W-e">
+  <keybind key="F12">
     <action name="Execute">
-      <startupnotify>
-        <enabled>true</enabled>
-        <name>Konqueror</name>
-      </startupnotify>
-      <command>kfmclient openProfile filemanagement</command>
+      <command>slock</command>
+    </action>
+  </keybind>
+  <keybind key="W-1">
+    <action name="GoToDesktop"><to>1</to></action>
+  </keybind>
+  <keybind key="W-2">
+    <action name="GoToDesktop"><to>2</to></action>
+  </keybind>
+  <keybind key="W-3">
+    <action name="GoToDesktop"><to>3</to></action>
+  </keybind>
+  <keybind key="W-4">
+    <action name="GoToDesktop"><to>4</to></action>
+  </keybind>
+  <keybind key="W-f">
+    <action name="ToggleMaximize"/>
+  </keybind>
+  <keybind key="W-i">
+    <action name="Execute">
+      <command>emacsclient --server-file=default -c</command>
+    </action>
+  </keybind>
+  <keybind key="W-j">
+    <action name="NextWindow">
+      <finalactions>
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="Unshade"/>
+      </finalactions>
+    </action>
+  </keybind>
+  <keybind key="W-k">
+    <action name="PreviousWindow">
+      <finalactions>
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="Unshade"/>
+      </finalactions>
+    </action>
+  </keybind>
+  <keybind key="W-m">
+    <action name="Execute">
+      <command>emacsclient --server-file=mail -c</command>
+    </action>
+  </keybind>
+  <keybind key="W-n">
+    <action name="Close"/>
+  </keybind>
+  <keybind key="W-u">
+    <action name="Execute">
+      <command>urxvt</command>
+    </action>
+  </keybind>
+  <keybind key="W-y">
+    <action name="Execute">
+      <command>firefox</command>
     </action>
   </keybind>
 </keyboard>
