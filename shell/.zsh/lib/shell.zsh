@@ -1,7 +1,7 @@
 
 alias mkn='make -n'
-alias sm='snakemake -p'
-alias smn='snakemake -pn'
+alias sm='snakemake --nocolor -p'
+alias smn='snakemake --nocolor -pn'
 
 export GREP_COLOR='1;32'
 
