@@ -104,7 +104,7 @@ mode "resize" {
 }
 
 # class                 border  backgr. text    indicator
-client.focused          #4c7899 #e5e5e5 #000000 #285577
+client.focused          #333333 #e5e5e5 #000000 #548b54
 client.focused_inactive #333333 #dddddd #666666 #484e50
 client.unfocused        #333333 #b3b3b3 #333333 #292d2e
 client.urgent           #2f343a #900000 #ffffff #900000
@@ -121,7 +121,7 @@ bar {
         statusline #333333
         separator #0000CD
 
-        focused_workspace  #dddddd #336688 #ffffff
+        focused_workspace  #dddddd #548b54 #ffffff
         active_workspace   #dddddd #dddddd #333333
         inactive_workspace #dddddd #b3b3b3 #333333
         urgent_workspace   #2f343a #900000 #ffffff
