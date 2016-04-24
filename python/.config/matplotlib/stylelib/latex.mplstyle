@@ -4,3 +4,17 @@ font.family: sans-serif
 font.sans-serif: Helvetica
 
 font.size: 10
+
+patch.linewidth: 0.8
+axes.linewidth: 0.8
+
+xtick.major.size: 1.75
+ytick.major.size: 1.75
+
+xtick.color: 0.1
+ytick.color: 0.1
+
+text.color: 0.1
+
+axes.edgecolor: 0.1
+axes.labelcolor: 0.1
