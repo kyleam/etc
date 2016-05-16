@@ -3,4 +3,4 @@
 [Default Applications]
 x-scheme-handler/http=firefox.desktop
 x-scheme-handler/https=firefox.desktop
-application/pdf=zathura.desktop
+application/pdf=mupdf.desktop

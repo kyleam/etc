@@ -1,2 +1,2 @@
 text/html;                      firefox %s
-application/pdf;                zathura %s
+application/pdf;                mupdf %s
