@@ -10,4 +10,14 @@ unclutter &
 synclient TouchpadOff=$(synclient -l | grep -c 'TouchpadOff.*=.*0')
 xbindkeys
 
-exec i3
+case $WM in
+    openbox)
+        exec openbox
+        ;;
+    i3)
+        exec i3
+        ;;
+    *)
+        exec i3
+        ;;
+esac

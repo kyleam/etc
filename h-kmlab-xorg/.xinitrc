@@ -8,4 +8,14 @@ unclutter &
 
 xrandr --output DVI-1 --off
 
-exec i3
+case $WM in
+    openbox)
+        exec openbox
+        ;;
+    i3)
+        exec i3
+        ;;
+    *)
+        exec i3
+        ;;
+esac
