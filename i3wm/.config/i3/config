@@ -120,7 +120,7 @@ bar {
     colors {
         background #dddddd
         statusline #333333
-        separator #0000CD
+        separator #548b54
 
         focused_workspace  #dddddd #548b54 #ffffff
         active_workspace   #dddddd #dddddd #333333
