@@ -17,6 +17,8 @@ ytick.minor.width: 0.3
 
 xtick.major.size: 1.2
 ytick.major.size: 1.2
+xtick.minor.size: 1.0
+ytick.minor.size: 1.0
 
 xtick.color: 0.1
 ytick.color: 0.1
