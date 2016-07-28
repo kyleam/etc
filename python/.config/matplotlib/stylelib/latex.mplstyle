@@ -5,11 +5,18 @@ font.sans-serif: Helvetica
 
 font.size: 9
 
-patch.linewidth: 0.8
-axes.linewidth: 0.8
+lines.linewidth: 0.5
+lines.markeredgewidth: 0.4
+patch.linewidth: 0.5
+axes.linewidth: 0.6
 
-xtick.major.size: 1.5
-ytick.major.size: 1.5
+xtick.major.width: 0.4
+xtick.minor.width: 0.3
+ytick.major.width: 0.4
+ytick.minor.width: 0.3
+
+xtick.major.size: 1.2
+ytick.major.size: 1.2
 
 xtick.color: 0.1
 ytick.color: 0.1
