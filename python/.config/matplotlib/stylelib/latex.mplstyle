@@ -6,6 +6,12 @@ font.sans-serif: Helvetica
 font.size: 9
 
 lines.linewidth: 0.5
+boxplot.boxprops.linewidth: 0.5
+boxplot.capprops.linewidth: 0.5
+boxplot.flierprops.linewidth: 0.5
+boxplot.meanprops.linewidth: 0.5
+boxplot.medianprops.linewidth: 0.5
+boxplot.whiskerprops.linewidth: 0.5
 lines.markeredgewidth: 0.4
 patch.linewidth: 0.5
 axes.linewidth: 0.6
