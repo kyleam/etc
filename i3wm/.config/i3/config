@@ -18,6 +18,7 @@ bindsym $mod+u exec i3-sensible-terminal
 bindsym $mod+y exec firefox
 bindsym $mod+backslash exec mpc toggle
 bindsym $mod+Shift+backslash exec mpc next
+bindsym F9 exec emacsclient --server-file=default -n --eval "(km/org-open-last-pdf)"
 bindsym F12 exec slock
 
 bindsym $mod+n kill
