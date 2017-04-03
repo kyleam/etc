@@ -20,9 +20,11 @@ setopt share_history # share command history data
 autoload -U colors && colors
 PS1="[%m: %c]%# "
 
-for config_file in $ZSH_LIB/*; do
-    source $config_file
-done
+if [ -n "$ZSH_LIB" ]; then
+   for config_file in $ZSH_LIB/*; do
+       source $config_file
+   done
+fi
 
 case $TERM in
   (*xterm* | rxvt*)
