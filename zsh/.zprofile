@@ -21,6 +21,7 @@ export GUIX_PACKAGE_PATH="$HOME/src/guix-packages${GUIX_PACKAGE_PATH:+:}$GUIX_PA
 GUIX_PROFILE="$HOME/.guix-profile"
 export GUIX_LOCPATH="$GUIX_PROFILE/lib/locale"
 export GUILE_LOAD_PATH="$GUIX_PROFILE/share/guile/site/2.0"
+export MANPATH="$GUIX_PROFILE/share/man/:$MANPATH"
 export SSL_CERT_DIR="$GUIX_PROFILE/etc/ssl/certs"
 export SSL_CERT_FILE="$GUIX_PROFILE/etc/ssl/certs/ca-certificates.crt"
 source "$GUIX_PROFILE/etc/profile"
