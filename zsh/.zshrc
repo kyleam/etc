@@ -37,6 +37,13 @@ case $TERM in
     function preexec {
       printf "\033]0;%s\a" "$1"
     }
-
+  ;;
+  (dumb)
+    unsetopt zle
+    unsetopt prompt_cr
+    unsetopt prompt_subst
+    unfunction precmd
+    unfunction preexec
+    PS1='$ '
   ;;
 esac
