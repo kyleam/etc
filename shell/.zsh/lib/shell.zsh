@@ -55,8 +55,6 @@ function bib2endnote() {
     bib2xml $1 | xml2end
 }
 
-## Directory
-
 setopt auto_name_dirs
 setopt auto_pushd
 setopt pushd_ignore_dups

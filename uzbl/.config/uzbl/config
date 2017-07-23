@@ -1,6 +1,3 @@
-# Example uzbl config. All settings are optional. You can use uzbl without
-# any config at all (but it won't do much).
-
 # === Core settings ==========================================================
 
 # common directory locations

@@ -1,5 +1,5 @@
 backend      : TkAgg
-toolbar      : None   # None | toolbar2  ("classic" is deprecated)
+toolbar      : None
 
 savefig.format: pdf
 

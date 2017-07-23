@@ -11,7 +11,6 @@ alias gxls='git annex list --allrepos'
 alias gxu='git annex unlock'
 alias gxw='git annex whereis'
 
-# Metadata
 alias gxt='git annex metadata'
 alias gxv='git annex view'
 alias gxvp='git annex vpop'

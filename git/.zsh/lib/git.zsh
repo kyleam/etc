@@ -68,10 +68,7 @@ compdef _git gre=git-reset
 alias grh='git reset HEAD'
 alias grhh='git reset HEAD --hard'
 
-# Will cd into the top of the current repository
-# or submodule.
 alias grt='cd $(git rev-parse --show-toplevel || echo ".")'
 
-## mr aliases
 alias mrap='mr auto; mr push'
 alias mru='mr update'
