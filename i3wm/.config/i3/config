@@ -12,13 +12,13 @@ workspace_auto_back_and_forth yes
 # workspace 9 output DVI-0
 
 bindsym $mod+d exec dmenu_run
-bindsym $mod+i exec emacsclient --server-file=default -c
-bindsym $mod+m exec emacsclient --server-file=mail -c
+bindsym $mod+i exec emacsclient --socket-name=default -c
+bindsym $mod+m exec emacsclient --socket-name=mail -c
 bindsym $mod+u exec i3-sensible-terminal
 bindsym $mod+y exec firefox
 bindsym $mod+backslash exec mpc toggle
 bindsym $mod+Shift+backslash exec mpc next
-bindsym F9 exec emacsclient --server-file=default -n --eval "(km/org-open-last-pdf)"
+bindsym F9 exec emacsclient --socket-name=default -n --eval "(km/org-open-last-pdf)"
 bindsym F12 exec slock
 
 bindsym $mod+n kill

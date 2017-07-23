@@ -29,8 +29,8 @@ alias scl='screen -ls'
 alias scr='screen -r'
 alias scs='screen -S'
 
-alias edd='[ -e ~/.emacs.d/server/default ] || emacs --daemon=default'
-alias edm='[ -e ~/.emacs.d/server/mail ] || emacs --daemon=mail'
+alias edd="[ -e /tmp/emacs$UID/default ] || emacs --daemon=default"
+alias edm="[ -e /tmp/emacs$UID/mail ] || emacs --daemon=mail"
 alias et='emacsclient -t'
 alias ec='emacsclient --no-wait -c'
 
