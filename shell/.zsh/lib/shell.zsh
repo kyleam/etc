@@ -9,13 +9,8 @@ function bgrep() {
     grep -A3 -B3 "$@"
 }
 
-alias rmrf='rm -rf'
-
 alias rs='rsync --progress -avzu'
 alias rss='rsync --progress -avzue ssh'
-
-alias h='head -1'
-alias t='tail -1'
 
 alias lns='ln -s'
 function lnp() {
@@ -36,9 +31,6 @@ alias ec='emacsclient --no-wait -c'
 
 ## Prevent unintentionally entering vi.
 alias vi='vim'
-
-alias ackt='ack TODO'
-alias ackf='ack FIXME'
 
 alias duh='du -h'
 
