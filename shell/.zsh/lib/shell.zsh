@@ -26,8 +26,8 @@ alias scs='screen -S'
 
 alias edd="[ -e /tmp/emacs$UID/default ] || emacs --daemon=default"
 alias edm="[ -e /tmp/emacs$UID/mail ] || emacs --daemon=mail"
-alias et='emacsclient -t'
-alias ec='emacsclient --no-wait -c'
+alias et='emacsclient --socket-name=default -t'
+alias ec='emacsclient --socket-name=default --no-wait -c'
 
 ## Prevent unintentionally entering vi.
 alias vi='vim'
